@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Table</title>
+        <style>
+            /*page styling*/
+            body{
+                background-color:beige;
+            }
+            /*table styling*/
+            table{
+                width: 50%;
+                /*set a border around the data*/
+                border: 1px solid brown;
+                /*collapse the border so they don't stack*/
+                border-collapse: collapse;
+            }
+            /*these styles will apply to both the headings and the columns/data*/
+            th, td{
+                text-align: left;
+                padding: 8px;
+            }
+
+            th{
+                background-color: black;
+                color:white;
+            }
+
+            /*set alternating colors for each row*/
+            tr:nth-child(even){
+                background-color: lightcyan;
+                color:indigo;
+            }
+
+            /*add a hover for the row*/
+            tr.hover{
+                background-color: lightgreen;
+            }
+
+            td{
+                color:black;
+            }
+        </style>
+    </head>
+
+    <body>
+        <header>Table</header>
+
+        <main>
+            <table>
+                <!--caption provides a description for the table content - very helpful for accessibility-->
+                <caption>Animals</caption>
+                <!--table headings will describe the column data-->
+                <thead>
+                    <!--use the cope of cel to give the screen readers context-->
+                    <th scope="cel">Category</th>
+                    <th scope="cel">Rabbit</th>
+                    <th scope="cel">Elephant</th>
+                    <th scope="cel">Dog</th>
+                </thead>
+                <!--table row-->
+                <tr>
+                    <!--table data/cell/column - the actual place of information that you want displayed-->
+                    <td>Color</td>
+                    <td>White</td>
+                    <td>Grey</td>
+                    <td>Black</td>
+
+                <tr>
+                    <!--second row of data-->
+                    <td>Age</td>
+                    <td>3</td>
+                    <td>10</td>
+                    <td>4</td>
+
+                <tr>
+                     <!--third row of data-->
+                    <td>Sound</td>
+                     <td>*Squeak*</td>
+                     <td>*Bahruuuuuuhhh*</td>
+                     <td>*Bark*</td>
+            </table>
+        </main>
+    </body>
+</html>
